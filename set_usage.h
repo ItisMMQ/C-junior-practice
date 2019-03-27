@@ -1,5 +1,5 @@
 #pragma once
-/*
+
 #include "pch.h"
 #include <iterator>
 #include <iostream>
@@ -120,8 +120,8 @@ int set_test() {
 	ostream_iterator<Person> out2(cout, " ");
 	Person p[] = { Person("Gregg",25),Person("Ann",30),Person("Bill",20),
 				  Person("Gregg",35),Person("Kay",30) };
-	set<Person> pSet1(p, p + 5);                  //°´ĞÕÃûÅÅĞò
-	set<Person, lesserAge> pSet2(p, p + 5);//°´ÄêÁäÅÅĞò
+	set<Person> pSet1(p, p + 5);                  //Â°Â´ÃÃ•ÃƒÃ»Ã…Ã…ÃÃ²
+	set<Person, lesserAge> pSet2(p, p + 5);//Â°Â´Ã„ÃªÃÃ¤Ã…Ã…ÃÃ²
 	cout << "pSet1: ";
 	copy(pSet1.begin(), pSet1.end(), out2); // ** pSet1 = ((Ann,30) (Bill,20) (Gregg,25) (Kay,30)) **
 	cout << endl;
@@ -145,5 +145,3 @@ int set_test() {
 	cout << pSet3.count("Gregg") << ' ' << pSet4.count(Person("", 30)) << endl; // 2	2
 	return 0;
 }
-
-*/
